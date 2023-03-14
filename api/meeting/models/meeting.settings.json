@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meetings",
+  "info": {
+    "name": "Meeting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MeetingDate": {
+      "type": "datetime"
+    },
+    "MeetingDuration": {
+      "type": "time"
+    },
+    "userId": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}
